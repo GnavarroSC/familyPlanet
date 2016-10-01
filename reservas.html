@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>..::Family Planet::..</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+	<script src="js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
+	<script src="js/bootstrap-datepicker.es.min.js" charset="UTF-8"></script>
+</head>
+<body>
+	<div class="span5" id="sandbox-container">
+		<label for="fechaReserva">Fecha reserva:</label><br>
+		<input id="fechaReserva" class="form-control" type="text">
+	</div>
+    <div class="">
+        <label for="selectSalon">Salon:</label><br>
+        <select id="selectSalon" onchange="capacidadSalon(this.value)">
+			<option value="0">Selecciona un salon</option>
+            <option value="Don Carlos">Don Carlos</option>
+            <option value="Don Pepe">Don Pepe</option>
+            <option value="Principal">Principal</option>
+            <option value="Don Hector">Don Hector</option>
+            <option value="Catering">Catering</option>
+        </select>
+    </div>
+    <div id="capcidadSalon" class="">
+
+    </div>
+	<div id="respuesta" class="">
+
+	</div>
+	<div class="">
+        <label for="selectTEvento">Hora inicio:</label><br>
+        <select id="horaInicio">
+        </select>
+    </div>
+	<div class="">
+        <label for="selectTEvento">Hora finalizar:</label><br>
+        <select id="horaFinalizar">
+        </select>
+    </div>
+	<button type="button" id="verificarD">Verificar</button>
+
+	<div id="formulario" style="display: none" class="">
+		<div class="">
+	        <label for="selectTEvento">Tipo evento:</label><br>
+	        <select id="selectTEvento">
+	            <option value="Cumpleaños">Cumpleaños</option>
+                <option value="Grado">Grado</option>
+                <option value="otro">Otro</option>
+	        </select>
+	    </div>
+	    <div class="">
+	        <label for="selectMenu">Menú:</label><br>
+	        <select id="selectMenu" onchange="cambiarMenu(this.value)">
+				<option value="0">Seleccione un menú</option>
+	            <option value="Carnes">Carnes</option>
+	            <option value="Pastas">Pastas</option>
+	            <option value="A la carta">A la carta</option>
+	        </select>
+	    </div>
+		<div id="divPlatos" class="">
+			<div class="">
+		        <label for="selectPlatos">Plato principal:</label><br>
+		        <select id="selectPlatos" onload="precios()" onchange="precios()">
+		        </select>
+		    </div>
+		    <div class="">
+		        <label for="selectEntrada">Entrada:</label><br>
+		        <select id="selectEntrada">
+					<option value="Patacones con suero y pique criollo">Patacones con suero y pique criollo</option>
+					<option value="Crostini de espinaca">Crostini de espinaca</option>
+		        </select>
+		    </div>
+		    <div class="">
+		        <label for="selectEnsalada">Ensalada:</label><br>
+		        <select id="selectEnsalada">
+					<option value="Verduras calientes">Verduras calientes</option>
+					<option value="Ensalada fresca">Ensalada fresca</option>
+		        </select>
+		    </div>
+		    <div class="">
+		        <label for="selectCoctel">Coctel:</label><br>
+		        <select id="selectCoctel">
+					<option value="Fruit punch">Fruit punch</option>
+					<option value="Coctel de corozo">Coctel de corozo</option>
+		        </select>
+		    </div>
+		    <div class="">
+		        <label for="selectPostre">Postre:</label><br>
+		        <select id="selectPostre">
+					<option value="Flan de caramelo">Flan de caramelo</option>
+					<option value="Mousse de chocolate blanco">Mousse de chocolate blanco</option>
+					<option value="Mousse de limon">Mousse de limon</option>
+					<option value="Mousse de maracuya">Mousse de maracuya</option>
+		        </select>
+		    </div>
+			<div class="">
+				<label for="numeroPersonas">Número de personas:</label><br>
+				<input id="numeroPersonas" type="text" onkeyup="calcularPrecio(this.value)" value="0">
+			</div>
+		</div>
+		<div class="">
+	        <label for="selectPago">Método de pago:</label><br>
+	        <select id="selectPago">
+				<option value="Contado">Contado</option>
+				<option value="Crédito">Crédito</option>
+	        </select>
+	    </div>
+	    <div class="">
+	        <div id="precioPlato" class="">
+
+	        </div>
+	    </div>
+	    <div class="">
+	        <div id="precioTotal" class="">
+
+	        </div>
+	    </div>
+		<div class="">
+			<label for="nombre">Nombre:</label><br>
+			<input id="nombre" type="text" onkeyup="return lettersOnly(this)">
+		</div>
+		<div class="">
+			<label for="apellido">Apellido:</label><br>
+			<input id="apellido" type="text" onkeyup="return lettersOnly(this)">
+		</div>
+		<div class="">
+			<label for="cedula">Cedula:</label><br>
+			<input id="cedula" type="text" onkeyup="return ValNumero(this)">
+		</div>
+		<div class="">
+			<label for="telefono">Teléfono:</label><br>
+			<input id="telefono" type="text" onkeyup="return ValNumero(this)" maxlength="10">
+		</div>
+		<div class="">
+			<label for="correo">Correo:</label><br>
+			<input id="correo" type="email">
+		</div>
+		<button type="button" id="reservar">Reservar</button>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+</html>

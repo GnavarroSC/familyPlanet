@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    	<meta charset="UTF-8">
+    	<title>..::Family Planet::..</title>
+    	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    	<script src="js/jquery-2.2.4.min.js"></script>
+    	<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+    	<script src="js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
+    	<script src="js/bootstrap-datepicker.es.min.js" charset="UTF-8"></script>
+    </head>
+    <body>
+        <h2>Solicitud contacto</h2>
+        <select id="selectSC" onchange="cambiarFomulario(this.value)">
+            <option value="Convenio empresarial">Convenio empresarial</option>
+            <option value="Visitas pedagogicas">Visitas pedagogicas</option>
+        </select>
+        <div id="divCE">
+            <h3>Convenio empresiarial</h3>
+            <div class="">
+                <label for="nombreCE">Nombre de la empresa:</label><br>
+                <input id="nombreCE" type="text" onkeyup="">
+            </div>
+            <div class="">
+                <label for="nitCE">NIT:</label><br>
+                <input id="nitCE" type="text" onkeyup="">
+            </div>
+            <div class="">
+                <label for="direccionCE">Dirección principal:</label><br>
+                <input id="direccionCE" type="text" onkeyup="">
+            </div>
+            <div class="">
+                <label for="telefonoCE">Teléfono:</label><br>
+                <input id="telefonoCE" type="text" onkeyup="">
+            </div>
+            <div class="">
+                <label for="contactoCE">Contacto:</label><br>
+                <input id="contactoCE" type="text" onkeyup="return lettersOnly(this)">
+            </div>
+            <div class="">
+                <label for="cargoCE">Cargo:</label><br>
+                <input id="cargoCE" type="text" onkeyup="return lettersOnly(this)">
+            </div>
+            <div class="">
+                <label for="correoCE">Correo:</label><br>
+                <input id="correoCE" type="text" onkeyup="">
+            </div>
+        </div>
+        <div id="divVP" style="display: none">
+            <h3>Visita pedagogica</h3>
+            <div class="">
+        		<label for="nombreVP">Nombre de la entidad:</label><br>
+        		<input id="nombreVP" type="text">
+        	</div>
+            <div class="">
+        		<label for="direccionVP">Dirección principal:</label><br>
+        		<input id="direccionVP" type="text" onkeyup="">
+        	</div>
+            <div class="">
+        		<label for="telefonoVP">Teléfono:</label><br>
+        		<input id="telefonoVP" type="text" onkeyup="return ValNumero(this)">
+        	</div>
+            <div class="">
+        		<label for="contactoVP">Contacto:</label><br>
+        		<input id="contactoVP" type="text" onkeyup="return lettersOnly(this)">
+        	</div>
+            <div class="">
+        		<label for="cargoVP">Cargo:</label><br>
+        		<input id="cargoVP" type="text" onkeyup="return lettersOnly(this)">
+        	</div>
+            <div class="">
+        		<label for="correoVP">Correo:</label><br>
+        		<input id="correoVP" type="text" onkeyup="">
+        	</div>
+        </div>
+    	<button type="button" id="enviarContacto">Enviar</button>
+
+        <h2>Solicitud de reserva salon</h2>
+        <h3>Información general</h3>
+        <div class="span5" id="sandbox-container">
+    		<label for="fechaReserva">Fecha reserva:</label><br>
+    		<input id="fechaReserva" class="form-control" type="text">
+    	</div>
+        <div class="">
+            <label for="selectSalon">Salon:</label><br>
+            <select id="selectSalon" onchange="">
+                <option value="0">Selecciona un salon</option>
+                <option value="Don Carlos">Don Carlos</option>
+                <option value="Don Pepe">Don Pepe</option>
+                <option value="Principal">Principal</option>
+                <option value="Don Hector">Don Hector</option>
+                <option value="Catering">Catering</option>
+            </select>
+        </div>
+        <div class="">
+            <label for="selectTEvento">Hora inicio:</label><br>
+            <select id="horaInicio">
+            </select>
+        </div>
+        <div class="">
+            <label for="selectTEvento">Hora finalizar:</label><br>
+            <select id="horaFinalizar">
+            </select>
+        </div>
+        <button type="button" id="verificarD">Verificar</button>
+        <div id="formulario" style="display: none" class="">
+            <div class="">
+                <label for="numeroPersonas">Numero personas:</label><br>
+                <input id="numeroPersonas" type="text" onkeyup="">
+            </div>
+            <div class="">
+                <label for="nombre">Nombre:</label><br>
+                <input id="nombre" type="text" onkeyup="">
+            </div>
+            <div class="">
+                <label for="cedula">Cédula:</label><br>
+                <input id="cedula" type="text" onkeyup="">
+            </div>
+            <div class="">
+                <label for="telefono">Teléfono:</label><br>
+                <input id="telefono" type="text" onkeyup="">
+            </div>
+            <div class="">
+                <label for="correo">Correo:</label><br>
+                <input id="correo" type="text" onkeyup="">
+            </div>
+            <button type="button" id="enviara">Enviar</button>
+        </div>
+    	<script src="js/formato.js"></script>
+    </body>
+</html>

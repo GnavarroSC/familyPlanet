@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <meta charset="UTF-8">
-        <title>Familyplanet</title>
+        <title>Family Planet</title>
         <?php include 'head.php'; ?>
     </head>
     <body>
@@ -134,7 +134,7 @@
                                             <a href="#" title="INTERACTIVAS, MECANICAS ELECTRONICAS Y DE DESTREZA"><img src="img/atraccion.jpg" width="100%" height="100%" title="INTERACTIVAS, MECANICAS ELECTRONICAS Y DE DESTREZA" alt=""></a>
                                         </figure>
                                         <div class="extra-wrap">
-                                            <h5 class="letra1">INTERACTIVAS, MECANICAS ELECTRONICAS Y DE DESTREZA</h5>
+                                            <h5 class="letra1">INTERACTIVAS, MECANICAS ELECTRÓNICAS Y DE DESTREZA</h5>
                                             <div align="center">
                                                 <a href="atracciones.php">
                                                     <img src="img/medio-planeta.png" alt="">

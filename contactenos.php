@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title>Familyplanet</title>
         <?php include 'head.php'; ?>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD92Hel6kF2Ng4YdSrrwUJF7pGfboL0biI"></script>
     </head>
     <body>
         <?php include 'animacion.php'; ?>

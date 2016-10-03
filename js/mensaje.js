@@ -1,3 +1,4 @@
+var click = "no";
 $(function () {
     var nombrePagina = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
     if (nombrePagina == "atracciones.php") {
@@ -16,28 +17,35 @@ $(function () {
 });
 
 function enviarMensaje() {
-    var Nombre = document.getElementById('nombre').value;
-    var Apellido = document.getElementById('apellido').value;
-    var Correo = document.getElementById('correo').value;
-    var Telefono = document.getElementById('telefono').value;
-    var Comentarios = document.getElementById('comentarios').value;
-    if (Nombre === "" || Nombre === null || Apellido === "" || Apellido === null || Correo === "" || Correo === null || Telefono === "" || Telefono === null || Comentarios === "" || Comentarios === null) {
-        alert("Llenar todos los datos");
-        return false;
-    }else {
-        $("#alerta").html("Enviando mensaje...");
-        $.ajax({
-            type: 'POST',
-            url: 'enviarMensaje.php',
-            data:('nombre='+Nombre+'&apellido='+Apellido+'&correo='+Correo+'&telefono='+Telefono+'&comentarios='+Comentarios)
-        }).done(function(respuesta){
-            document.getElementById('nombre').value = "";
-            document.getElementById('apellido').value = "";
-            document.getElementById('correo').value = "";
-            document.getElementById('telefono').value = "";
-            document.getElementById('comentarios').value = "";
-            $("#alerta").html("Mensaje enviado!");
-            }
-        );
+    if (click == "si") {
+
+    }else if (click == "no") {
+        click = "si";
+        var Nombre = document.getElementById('nombre').value;
+        var Apellido = document.getElementById('apellido').value;
+        var Correo = document.getElementById('correo').value;
+        var Telefono = document.getElementById('telefono').value;
+        var Comentarios = document.getElementById('comentarios').value;
+        if (Nombre === "" || Nombre === null || Apellido === "" || Apellido === null || Correo === "" || Correo === null || Telefono === "" || Telefono === null || Comentarios === "" || Comentarios === null) {
+            alert("Llenar todos los datos");
+            click = "no";
+            return false;
+        }else {
+            $("#alerta").html("Enviando mensaje...");
+            $.ajax({
+                type: 'POST',
+                url: 'enviarMensaje.php',
+                data:('nombre='+Nombre+'&apellido='+Apellido+'&correo='+Correo+'&telefono='+Telefono+'&comentarios='+Comentarios)
+            }).done(function(respuesta){
+                document.getElementById('nombre').value = "";
+                document.getElementById('apellido').value = "";
+                document.getElementById('correo').value = "";
+                document.getElementById('telefono').value = "";
+                document.getElementById('comentarios').value = "";
+                $("#alerta").html("Mensaje enviado!");
+                click = "no";
+                }
+            );
+        }
     }
 }

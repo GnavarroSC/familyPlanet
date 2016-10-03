@@ -1,7 +1,7 @@
 <div class=" container-fluid footer1">
     <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-4">
-            <a href="https://www.facebook.com/familyplanetbarranquilla/" target="_blank"  ><div align="center"><img src="img/facebook.png" align="right"  alt="" class="img-responsive"   ></div></a>
+            <a href="https://www.facebook.com/familyplanetbq/" target="_blank"  ><div align="center"><img src="img/facebook.png" align="right"  alt="" class="img-responsive"   ></div></a>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
             <a href="https://www.instagram.com/familyplanetbq/" target="_blank"><div align="center"><img src="img/instagram.png" alt=""  class="img-responsive" ></div></a>

@@ -51,7 +51,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 botones">
-                            <a href="#cumpleaños"><img src="img/cumpleaños.png" class="img-responsive ancho " > </a>
+                            <a href="#cumpleaños"><img src="img/cumpleaños.png" class="img-responsive ancho hidden-xs hidden-sm" > </a>
                             <a href="#eventos"><img src="img/eventos.png" class="img-responsive  ancho hidden-xs hidden-sm" > </a>
                             <a href="#aventuras"><img src="img/aventura.png" class="img-responsive ancho  hidden-xs hidden-sm" > </a>
 
@@ -64,21 +64,45 @@
                                  <h1 class="col-md-offset-4 titulo" >CUMPLEAÑOS</h1>
                             </div>
                         </div>
-
+                            <h3 class="text-center col-md-12 textoatraccion">
+                                Celebrar tu cumpleaños en Family Planet
+                                es súper fácil y divertido, contamos con
+                                planes estándar y planes personalizados,
+                                porque aquí las fiestas son a tu medida.
+                             </h3>
                             <div class="col-md-4 ">
                                 <img src="img/ftAtracciones03.jpg" alt="..."  class="img-responsive"  >
-
                             </div>
                             <div class="col-md-8 ">
-                            <h3 class="texto">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.
-                             </h3>
+                                <h3 class="texto">
+                                    FIESTA BÁSICA FAMILY PLANET
+                                </h3>
+                                <ul class="textoacor">
+                                    <li>Salón por 3 horas con mesas y sillas para tus invitados</li>
+                                    <li>Decoración Family Planet<sup>*</sup></li>
+                                    <li>Torta de cumpleaños Family (para 20 personas)</li>
+                                    <li>Tarjetas para disfrutar 2 horas de juego en el parque</li>
+                                    <li>Salón por 3 horas con mesas y sillas para tus invitados</li>
+                                    <li>Combos de mini hamburguesa o mini perro + gaseosa</li>
+                                    <li>Helados para tus invitados</li>
+                                    <li>Auxiliar recreacionista</li>
+                                </ul>
+                                <h3 class="texto">
+                                    FIESTA FAMILY PLANET
+                                </h3>
+                                <ul class="textoacor">
+                                    <li>Salón por 3 horas con mesas y sillas para tus invitados</li>
+                                    <li>Decoración Family Planet*<sup>*</sup></li>
+                                    <li>Sorpresa que puedes elegir entre vaso pitillo o gorras Family Planet.</li>
+                                    <li>Tarjetas cargadas para disfrutar 2 horas de juego en el parque</li>
+                                    <li>Torta de cumpleaños Family (para 30 personas)</li>
+                                    <li>Cajita Feliz (Nuggets, papa francesa, gaseosa y sorpresa)</li>
+                                    <li>Helados para tus invitados</li>
+                                    <li>Picada para adultos</li>
+                                    <li>Auxiliar Recreacionista</li>
+                                </ul>
                             </div>
                         </div>
-                        <a href="#eventos"><img src="img/eventos.png" class="img-responsive  hidden-md hidden-lg botones   ancho" > </a>
                         <div class="row2"  id="eventos">
                         <div class="row">
                             <div class="col-md-12">
@@ -87,18 +111,17 @@
                         </div>
                             <div class="col-md-4">
                                 <img src="img/ftAtracciones03.jpg" alt="..."  class="img-responsive"  >
-
                             </div>
                             <div class="col-md-8">
                             <h3 class="texto">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.
+                                Vive la emoción de montar en atracciones novedosas,<br>
+                                atractivas y totalmente seguras.<br>
+                                Carros chocones <br>
+                                Mini chocones <br>
+                                Barco Vikingo y Pirata.
                              </h3>
                             </div>
                         </div>
-                        <a href="#aventuras"><img src="img/aventura.png" class="img-responsive hidden-md  hidden-lg botones ancho " > </a>
                         <div class="row3" id="aventuras">
                         <div class="row">
                             <div class="col-md-12">
@@ -111,10 +134,11 @@
                             </div>
                            <div class="col-md-8">
                             <h3 class="texto">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.
+                                Vive la emoción de montar en atracciones novedosas,<br>
+                                atractivas y totalmente seguras.<br>
+                                Carros chocones <br>
+                                Mini chocones <br>
+                                Barco Vikingo y Pirata.
                              </h3>
                             </div>
                         </div>

@@ -1,4 +1,5 @@
 @import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+@import 'https://fonts.googleapis.com/css?family=Roboto';
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #e80e8a;
@@ -136,6 +137,70 @@ html, body, #canvas {
 .texto{
     width: 96%;
     color: #181A4A;
+
+}
+
+.alto{
+    margin-top: 7px;
+}
+
+.fondoacor{
+    background-color: #fff5cc;
+}
+
+.textoacor{
+    color: #181A4A;
+    font-family: 'Roboto', sans-serif;
+}
+
+.color1{
+    background-color: #f16623;
+}
+
+.color2{
+    background-color: #ea2227;
+}
+.color3{
+    background-color: #e80e8a;
+}
+
+.color4{
+    background-color: #1d76bb;
+}
+
+.textotitulo{
+    background-color: #FAAD19;
+    color: #181A4A;
+    margin-right: 15%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+}
+
+.textotitulo2{
+    background-color: #F16623;
+    color: #181A4A;
+    margin-right: 15%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+}
+.textoatraccion {
+    margin-left: 5%;
+    width: 85%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    color: #181A4A;
+}
+
+.textos {
+    background-color: #181A4A;
+    margin-right: 15%;
+    color: #FBED1F;
+    font-size: 123%;
+    text-align: center;
+    margin-top: 0%;
+    padding: 5% 5% 3.4% 5%;
 }
 .titulo{
     color: #F16623;
@@ -382,7 +447,7 @@ li.active-menuC > a {
 }
 
 li.active-menu > a, li.active-menu-x > a:hover {
-    border: #2f0ce8;
+    border: #2ec4f3;
     border-bottom-style: solid;
     border-radius: 0;
     border-width: 5px;
@@ -489,17 +554,32 @@ li.active-menu-x > a:active {
         width: 202px;
     }
     .logo{
-        width: 62%;
-        margin-top: -12%
+        width: 45%;
+        margin-top: 3%;
     }
 
+    .navbar-brand {
+        padding: 0;
+    }
+
+    .bordeFE {
+
+    margin-top: 21%;
+
+    }
 }
+
+
 @media screen  and (min-width: 360px) and (max-width: 768px ){
 
     .logo{
         width: 65%;
         margin-top: -3%;
     }
+     .bordeFE {
+    margin-top: 20%;
+
+}
 
 }
 @media screen  and (min-width: 768px) and (max-width: 800px ){
@@ -528,7 +608,6 @@ li.active-menu-x > a:active {
     .abc{
         margin-left: 21%;
     }
-
 
 }
 
@@ -734,24 +813,90 @@ li.active-menu-x > a:active {
         }
 
 }
-@media (min-width: 768px){
-.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-   margin-top: -7%;
-}
+@media (min-width: 768px) {
+    .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: -7%;
+    }
 
-@media screen  and (min-width: 1250px) and (max-width: 1482px ){
+    @media screen  and (min-width: 1250px) and (max-width: 1482px ) {
 
-        .logo{
+        .logo {
             margin-top: 30%
         }
 
-}
-@media screen  and (min-width: 812px) and (max-width: 1249px ){
+    }
+    @media screen  and (min-width: 812px) and (max-width: 1249px ) {
 
-        .logo{
+        .logo {
             margin-top: 30%
         }
 
+    }
+
+    @media screen  and (min-width: 990px) and (max-width: 1189px ) {
+
+        .textos {
+
+            font-size: 98%;
+
+        }
+    }
+
+    @media screen  and (min-width: 993px) and (max-width: 998px ) {
+
+        .carusel {
+
+            margin-top: -27%;
+        }
+    }
+
+    @media screen  and (min-width: 974px) and (max-width: 990px ) {
+
+        .carusel {
+
+            padding-right: 5%;
+        }
+
+        .bordeFE {
+
+            margin-top: 22%;
+
+        }
+    }
+
+    @media screen  and (min-width: 974px) and (max-width: 989px ) {
+
+        .ancho {
+            width: 95%;
+            height: 99px;
+        }
+    }
+    @media screen  and (min-width: 320px) and (max-width: 974px ) {
+
+        .ancho {
+            height: 168px;
+        }
+
+    }
+
+    @media screen  and (min-width: 320px) and (max-width: 961px ) {
+
+        .textos {
+
+            margin-right: 15%;
+
+        }
+
+    }
+
+    @media screen  and (min-width: 762px) and (max-width: 974px ) {
+
+        .bordeFE {
+
+            margin-top: 18%;
+
+        }
+    }
 }

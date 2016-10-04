@@ -200,15 +200,18 @@
                                         Funny Fish, Wack a Mole, Basketball Supershoot , Water Blast.
                                     </p>
                                 </div>
-                                <?php include 'formularioC.php'; ?>
-                            </div>
+                            <?php include 'formularioC.php'; ?>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
             <img src="img/pieplaneta.png" alt="" class="pieplaneta img-responsive">
             <?php include 'footer.php'; ?>
         </div>
+        <img src="img/arriba-01.png" class="ir-arriba img-responsive img-arriba" alt="" />
         <script src="js/mensaje.js"></script>
+        <script src="js/animaciones.js"></script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
     </body>
 </html>

@@ -151,5 +151,8 @@
             </div>
             <?php include 'footer.php'; ?>
         </div>
+        <img src="img/arriba-01.png" class="ir-arriba img-responsive img-arriba" alt="" />
+        <script src="js/animaciones.js"></script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
     </body>
 </html>

@@ -21,7 +21,7 @@
                             </ol>
                             <div class="carousel-inner borde slid" role="listbox">
                                 <div class="item active">
-                                    <img src="img/apertura.jpg" alt="...">
+                                    <img src="img/manana-abrimos.jpg" alt="...">
                                     <div class="carousel-caption">
                                     </div>
                                 </div>
@@ -77,7 +77,25 @@
                                 <section class="lazy-load-box effect-slidefromleft" data-delay="400" data-speed="550" style="-webkit-transition: all 550ms ease; -moz-transition: all 550ms ease; -ms-transition: all 550ms ease; -o-transition: all 550ms ease; transition: all 550ms ease;">
                                     <div class="banner-wrap extrabanner_1">
                                         <figure class="featured-thumbnail">
-                                            <a href="#" title="FIESTAS INFANTILES, EVENTOS Y COLEGIOS"><img src="img/cumpleaños.jpg" title="FIESTAS INFANTILES, EVENTOS Y COLEGIOS" alt="" width="100%" height="100%"></a>
+                                            <a href="nuestraHistoria.php" title="UN VIAJE DE DIVERSIÓN HA LLEGADO"><img src="img/ft-historia01.jpg" title="UN VIAJE DE DIVERSIÓN HA LLEGADO" alt="UN VIAJE DE DIVERSIÓN HA LLEGADO" width="100%" height="100%"></a>
+                                        </figure>
+                                        <div class="extra-wrap">
+                                            <h5 class="letra1">UN VIAJE DE DIVERSIÓN HA LLEGADO</h5>
+                                            <div align="center">
+                                                <a href="nuestraHistoria.php">
+                                                    <img src="img/medio-planeta.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <br>
+                                <section class="lazy-load-box effect-slidefromleft" data-delay="400" data-speed="550" style="-webkit-transition: all 550ms ease; -moz-transition: all 550ms ease; -ms-transition: all 550ms ease; -o-transition: all 550ms ease; transition: all 550ms ease;">
+                                    <div class="banner-wrap extrabanner_1">
+                                        <figure class="featured-thumbnail">
+                                            <a href="fiestasEventos.php" title="VEN Y ARMA LA FIESTA A TU ESTILO"><img src="img/cumpleaños.jpg" title="VEN Y ARMA LA FIESTA A TU ESTILO" alt="VEN Y ARMA LA FIESTA A TU ESTILO" width="100%" height="100%"></a>
                                         </figure>
                                         <div class="extra-wrap">
                                             <h5 class="letra1">VEN Y ARMA LA FIESTA <br>A TU ESTILO.</h5>
@@ -95,25 +113,7 @@
                                 <section class="lazy-load-box effect-slidefromleft" data-delay="400" data-speed="550" style="-webkit-transition: all 550ms ease; -moz-transition: all 550ms ease; -ms-transition: all 550ms ease; -o-transition: all 550ms ease; transition: all 550ms ease;">
                                     <div class="banner-wrap extrabanner_1">
                                         <figure class="featured-thumbnail">
-                                            <a href="#" title="FIESTAS INFANTILES, EVENTOS Y COLEGIOS"><img src="img/ludica.jpg" width="100%" height="100%" title="FIESTAS INFANTILES, EVENTOS Y COLEGIOS" alt=""></a>
-                                        </figure>
-                                        <div class="extra-wrap">
-                                            <h5 class="letra1">VISITA LÚDICAS PARA TODOS LOS DÍAS</h5>
-                                            <div align="center">
-                                                <a href="fiestasEventos.php">
-                                                    <img src="img/medio-planeta.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="col-md-3 text-center">
-                                <br>
-                                <section class="lazy-load-box effect-slidefromleft" data-delay="400" data-speed="550" style="-webkit-transition: all 550ms ease; -moz-transition: all 550ms ease; -ms-transition: all 550ms ease; -o-transition: all 550ms ease; transition: all 550ms ease;">
-                                    <div class="banner-wrap extrabanner_1">
-                                        <figure class="featured-thumbnail">
-                                            <a href="#" title="FIESTAS INFANTILES, EVENTOS Y COLEGIOS"><img src="img/promocion.jpg" width="100%" height="100%" title="FIESTAS INFANTILES, EVENTOS Y COLEGIOS" alt=""></a>
+                                            <a href="promociones.php" title="QUE LA DIVERSIÓN NO SE DETENGA"><img src="img/promocion.jpg" width="100%" height="100%" title="QUE LA DIVERSIÓN NO SE DETENGA" alt="QUE LA DIVERSIÓN NO SE DETENGA"></a>
                                         </figure>
                                         <div class="extra-wrap">
                                             <h5 class="letra1">QUE LA DIVERSIÓN NO SE DETENGA</h5>
@@ -131,7 +131,7 @@
                                 <section class="lazy-load-box effect-slidefromleft" data-delay="400" data-speed="550" style="-webkit-transition: all 550ms ease; -moz-transition: all 550ms ease; -ms-transition: all 550ms ease; -o-transition: all 550ms ease; transition: all 550ms ease;">
                                     <div class="banner-wrap extrabanner_1">
                                         <figure class="featured-thumbnail">
-                                            <a href="#" title="INTERACTIVAS, MECANICAS ELECTRONICAS Y DE DESTREZA"><img src="img/atraccion.jpg" width="100%" height="100%" title="INTERACTIVAS, MECANICAS ELECTRONICAS Y DE DESTREZA" alt=""></a>
+                                            <a href="atracciones.php" title="INTERACTIVAS, MECANICAS ELECTRONICAS Y DE DESTREZA"><img src="img/atraccion.jpg" width="100%" height="100%" title="INTERACTIVAS, MECANICAS ELECTRONICAS Y DE DESTREZA" alt="INTERACTIVAS, MECANICAS ELECTRÓNICAS Y DE DESTREZA"></a>
                                         </figure>
                                         <div class="extra-wrap">
                                             <h5 class="letra1">INTERACTIVAS, MECANICAS ELECTRÓNICAS Y DE DESTREZA</h5>
@@ -151,5 +151,6 @@
             </div>
             <?php include 'footer.php'; ?>
         </div>
+        <?php include 'scripts.php'; ?>
     </body>
 </html>

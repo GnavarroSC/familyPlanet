@@ -5,8 +5,8 @@ $(function () {
         document.getElementById("atracciones").className = "active-menu";
     }else if (nombrePagina == "fiestasEventos.php") {
         document.getElementById("fiestasEventos").className = "active-menu";
-    }else if (nombrePagina == "kitchen.php") {
-        document.getElementById("kitchen").className = "active-menu";
+    }else if (nombrePagina == "familyKitchen.php") {
+        document.getElementById("familyKitchen").className = "active-menu";
     }else if (nombrePagina == "promociones.php") {
         document.getElementById("promociones").className = "active-menu";
     }else if (nombrePagina == "elParque.php") {
@@ -14,6 +14,7 @@ $(function () {
     }else if (nombrePagina == "contactenos.php") {
         document.getElementById("contactenos").className = "active-menu";
     }
+    cargarFechas();
 });
 
 function enviarMensaje() {
@@ -26,6 +27,13 @@ function enviarMensaje() {
         var Correo = document.getElementById('correo').value;
         var Telefono = document.getElementById('telefono').value;
         var Comentarios = document.getElementById('comentarios').value;
+        var CBox= document.getElementById("checkbox");
+        var CheckBox = "";
+        if (CBox.checked) {
+            CheckBox = "Si";
+        }else {
+            CheckBox = "No";
+        }
         if (Nombre === "" || Nombre === null || Apellido === "" || Apellido === null || Correo === "" || Correo === null || Telefono === "" || Telefono === null || Comentarios === "" || Comentarios === null) {
             alert("Llenar todos los datos");
             click = "no";
@@ -35,7 +43,7 @@ function enviarMensaje() {
             $.ajax({
                 type: 'POST',
                 url: 'enviarMensaje.php',
-                data:('nombre='+Nombre+'&apellido='+Apellido+'&correo='+Correo+'&telefono='+Telefono+'&comentarios='+Comentarios)
+                data:('nombre='+Nombre+'&apellido='+Apellido+'&correo='+Correo+'&telefono='+Telefono+'&comentarios='+Comentarios+'&checkbox='+CheckBox)
             }).done(function(respuesta){
                 document.getElementById('nombre').value = "";
                 document.getElementById('apellido').value = "";
@@ -48,4 +56,10 @@ function enviarMensaje() {
             );
         }
     }
+}
+
+function cargarFechas() {
+    $("#dias").load("dias.txt");
+    $("#meses").load("meses.txt");
+    $("#anos").load("años.txt");
 }

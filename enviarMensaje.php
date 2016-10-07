@@ -8,7 +8,10 @@
     $Correo = strtolower($_POST["correo"]);
     $Telefono = $_POST["telefono"];
     $Comentarios = $_POST["comentarios"];
-    $strSQL = "INSERT INTO mensajes (nombre,apellido,correo,telefono,comentarios) VALUES ('".$Nombre."','".$Apellido."','".$Correo."','".$Telefono."','".$Comentarios."')";
+    $CheckBox = $_POST["checkbox"];
+    $Fecha = new DateTime();
+    $FechaMensaje = date_format($Fecha, 'yyyy-mm-dd');
+    $strSQL = "INSERT INTO mensajes (nombre,apellido,correo,telefono,comentarios,enviarPromo,fecha) VALUES ('".$Nombre."','".$Apellido."','".$Correo."','".$Telefono."','".$Comentarios."','".$CheckBox."','".$FechaMensaje."')";
     $objQuery = mysql_query($strSQL);
     if($objQuery){
         $Mensaje   = " <!DOCTYPE html>" . "\r\n";
@@ -123,7 +126,7 @@
         $mail1->From = "ventas@familyplanet.co";
         $mail1->FromName = "ventas@familyplanet.co";
         $mail1->AddAddress("ventas@familyplanet.co","Ventas");
-        $mail1->Subject = "Mensaje";
+        $mail1->Subject = "Mensaje de ".$Nombre." ".$Apellido;
         $mail1->Body = $Mensaje1;
         $mail1->WordWrap = 50;
         $mail1->IsHTML(true);

@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <title>Familyplanet</title>
         <?php include 'head.php'; ?>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD92Hel6kF2Ng4YdSrrwUJF7pGfboL0biI"></script>
     </head>
     <body>
         <?php include 'animacion.php'; ?>
@@ -19,9 +18,7 @@
                             <div id="carousel-example-generic" class="carousel" data-ride="carousel">
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
-                                        <img src="img/ftContactenos.jpg" alt="...">
-                                        <div class="carousel-caption">
-                                        </div>
+                                        <a href="https://www.google.com.co/maps/dir//family+planet,+%2338-+a,+Cl.+51+%233884,+Barranquilla,+Atl%C3%A1ntico/@10.9813696,-74.7908181,15z/data=!4m15!1m6!3m5!1s0x0:0x26c88ee7a43856e7!2sfamily+planet!8m2!3d10.9813696!4d-74.7908181!4m7!1m0!1m5!1m1!1s0x8ef42d663f45bd69:0x26c88ee7a43856e7!2m2!1d-74.7908181!2d10.9813696" target="_blank"><img src="img/ftContactenos.jpg" alt="" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -33,6 +30,6 @@
             <img src="img/pieplaneta.png" alt="" class="pieplaneta img-responsive">
             <?php include 'footer.php'; ?>
         </div>
-        <script src="js/mensaje.js"></script>
+        <?php include 'scripts.php'; ?>
     </body>
 </html>

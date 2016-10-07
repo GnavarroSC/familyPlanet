@@ -23,17 +23,17 @@
                                 </ol>
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
-                                        <img src="img/ftPromociones01.jpg" alt="...">
+                                        <img src="img/Promo1.jpg" alt="...">
                                         <div class="carousel-caption">
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <img src="img/ftPromociones02.jpg" alt="...">
+                                        <img src="img/Promo2.jpg" alt="...">
                                         <div class="carousel-caption">
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <img src="img/ftPromociones03.jpg" alt="...">
+                                        <img src="img/Promo3.jpg" alt="...">
                                         <div class="carousel-caption">
                                         </div>
                                     </div>
@@ -55,6 +55,6 @@
             <img src="img/pieplaneta.png" alt="" class="pieplaneta img-responsive">
             <?php include 'footer.php'; ?>
         </div>
-        <script src="js/mensaje.js"></script>
+        <?php include 'scripts.php'; ?>
     </body>
 </html>

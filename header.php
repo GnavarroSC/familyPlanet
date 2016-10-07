@@ -14,7 +14,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li id="atracciones"><a href="atracciones.php" class="letras">ATRACCIONES</a></li>
                     <li id="fiestasEventos"><a href="fiestasEventos.php" class="letras" >FIESTAS Y EVENTOS</a></li>
-                    <li id="kitchen"><a href="kitchen.php" class="letras">FAMILY KITCHEN</a></li>
+                    <li id="familyKitchen"><a href="familyKitchen.php" class="letras">FAMILY KITCHEN</a></li>
                     <li id="promociones"><a href="promociones.php" class="letras">PROMOCIONES</a></li>
                     <li id="elParque"><a href="elParque.php" class="letras" >EL PARQUE</a></li>
                     <li class="active-menuC" id="contactenos"><a href="contactenos.php" style="background-color: #E80E8A;color: #fff" class="letras">CONTÁCTENOS</a></li>
